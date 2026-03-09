@@ -1,0 +1,242 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+}
+
+/* MAIN LAYOUT */
+.page{
+  display:flex;
+  height:100vh;
+}
+
+/* HERO SECTION */
+.hero{
+  flex:1;
+
+  /* ONLINE IMAGE LINK */
+  background-image:url("/cher.jpg");
+
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+/* DARK OCEAN OVERLAY */
+.hero-overlay{
+  background:linear-gradient(
+  rgba(0,40,60,0.6),
+  rgba(0,20,40,0.7)
+  );
+
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:60px;
+}
+
+/* MAGAZINE TITLE */
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:55px;
+  margin:0;
+  letter-spacing:2px;
+}
+
+.hero h2{
+  font-family:'Playfair Display', serif;
+  font-size:35px;
+  margin-top:5px;
+  color:#9be7ff;
+}
+
+/* DESCRIPTION */
+.hero p{
+  margin-top:20px;
+  max-width:420px;
+  line-height:1.6;
+  font-size:16px;
+  opacity:0.9;
+}
+
+
+/* FORM SIDE */
+.form-section{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(#f6fbff,#e8f6ff);
+}
+
+
+/* GLASS FORM */
+.card{
+  width:360px;
+  padding:40px;
+  border-radius:16px;
+
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* FORM TITLE */
+h3{
+  text-align:center;
+  margin-bottom:30px;
+  font-family:'Playfair Display', serif;
+  font-size:26px;
+  color:#004a6e;
+}
+
+/* FLOATING INPUT */
+.input-group{
+  position:relative;
+  margin-bottom:22px;
+}
+
+.input-group input{
+  width:100%;
+  padding:12px 10px;
+  border:none;
+  border-bottom:2px solid #bbb;
+  background:transparent;
+  outline:none;
+  font-size:15px;
+}
+
+.input-group label{
+  position:absolute;
+  left:0;
+  top:12px;
+  font-size:14px;
+  color:#777;
+  transition:0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label{
+  top:-8px;
+  font-size:12px;
+  color:#0084a8;
+}
+
+/* BUTTON */
+button{
+  width:100%;
+  padding:12px;
+
+  border:none;
+  border-radius:30px;
+
+  background:linear-gradient(135deg,#00bcd4,#0077b6);
+  color:white;
+
+  font-weight:600;
+  font-size:15px;
+
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ROLE CARDS */
+.role-options{
+  display:flex;
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.role-card{
+  flex:1;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  text-align:center;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.role-card:hover{
+  border-color:#00a8cc;
+  background:#e6faff;
+}
+
+/* SWITCH TEXT */
+.switch{
+  text-align:center;
+  margin-top:18px;
+}
+
+.switch span{
+  color:#0077b6;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* ERROR MESSAGE */
+.message{
+  text-align:center;
+  margin-top:15px;
+  color:red;
+}
+
+/* TABLE CONTAINER */
+table{
+  width:100%;
+  margin-top:25px;
+  border-collapse:collapse;
+  font-size:14px;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TABLE HEADER */
+table thead{
+  background:linear-gradient(135deg,#00bcd4,#0077b6);
+  color:white;
+}
+
+table th{
+  padding:12px;
+  text-align:left;
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+/* TABLE BODY */
+table td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+  color:#333;
+}
+
+/* ZEBRA STRIPES */
+table tbody tr:nth-child(even){
+  background:#f4fbff;
+}
+
+/* HOVER EFFECT */
+table tbody tr:hover{
+  background:#e6f7ff;
+  transition:0.2s;
+}
+
+/* LAST ROW REMOVE BORDER */
+table tbody tr:last-child td{
+  border-bottom:none;
+}
